@@ -18,5 +18,8 @@ def run_app():
     st.subheader("Predict Bone Age")
     st.image(IMAGE_ADDRESS,caption="Bone Age")
     st.subheader("Please upload your image")
-
+    gender = st.radio("select gender", ("Male", "Female"))
+    gender_feature = 1 if gender == "Male" else 0
+    image= st.file_uploader("Please upload your image", type = ["png", "jpg", "jpeg"], accept_multiple_files= False, help = "Please upload an image")
+                            
 run_app()
