@@ -13,3 +13,10 @@ IMAGE_NAME = "User_image.png"
 class_label = ["Male", "Female"]
 class_label.sort()
 
+def run_app():
+    st.title("Bone Age Prediction")
+    st.subheader("Predict Bone Age")
+    st.image(IMAGE_ADDRESS,caption="Bone Age")
+    st.subheader("Please upload your image")
+
+run_app()
