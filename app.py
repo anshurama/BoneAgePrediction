@@ -5,7 +5,7 @@ import numpy as np
 from tensorflow import keras
 from PIL import Image
 import pickle
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
+from tensorflow.keras.applications.resnet import preprocess_input
 from keras.layers import GlobalAveragePooling2D
 from keras.models import Model
 
